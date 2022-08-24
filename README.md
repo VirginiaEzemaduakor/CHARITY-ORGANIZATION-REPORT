@@ -38,7 +38,8 @@ Result: Wrong audience, lack of motivation, nature of their job, some donors hav
 All data were imported into the SQL tool (sqliteonline.com) using Postgres IDE and were queried with different codes to obtain insights necessary to increase donations.
 
 Fig. 1
-![fig.1](fiq.1.png) ![fig.1.1](fig.1.1.png)
+![fig.1](images/fiq.1.png)
+ ![fig.1.1](images/fig.1.1.png)
 
  
  
@@ -53,8 +54,7 @@ Figure 3 shows that the total donors were 1000 of which 508 were females while 4
 > **GROUP BY** gender;
 
 Fig. 2
-![](fig.%203.png)    
-
+![fig.2](images/fig.%202.png)
 
 #### 2. **Total donation made by frequency of donation**
 Donors donated at different frequencies (Fig. 4). The donation frequencies are; Once ($32,666),
@@ -72,7 +72,8 @@ Often ($28,476), and Never ($34,263).
 > **GROUP BY** donation_frequency;
 
 Fig. 3
-![](fig.%204.png)
+![fig.3](images/fig.%203.png)
+
 
 #### 3. **Total donation and number of donations by job field**
 Total numbers of donations made on each 12 different job fields (Fig. 5) includes: Business
@@ -94,10 +95,10 @@ California ($30,264), Texas ($24,097), Florida ($20,562), New York ($14,759), Vi
 > **GROUP BY** job_field;
 
 Fig. 4
-![](fig.%205.png)
+![fig. 4](images/fig.%204.png)
 
 #### 4. **Total donation and number of donations above, below and equals $200**
-Figure 6 shows that over ~50% (586) of the total numbers of donors donated above $200 with a total donation of $205,892, ~41% (411) of donors donated less than $200 with a total donation of $24,593 (Fig. 7), while ~1% (3) donors donated $200 with a total donation of $600 (Fig. 8).
+Figure 5 shows that over ~50% (586) of the total numbers of donors donated above $200 with a total donation of $205,892, ~41% (411) of donors donated less than $200 with a total donation of $24,593 (Fig. 6), while ~1% (3) donors donated $200 with a total donation of $600 (Fig. 7).
 
 > **SELECT SUM** (donation), **COUNT** (donation)
 >
@@ -106,7 +107,7 @@ Figure 6 shows that over ~50% (586) of the total numbers of donors donated above
 > **WHERE** donation >200; 
 
 Fig. 5
-![](fig.%206.png)
+![fig.5](images/fig.%205.png)
 
 #
 > **SELECT SUM** (donation), **COUNT** (donation)
@@ -116,7 +117,7 @@ Fig. 5
 > **WHERE** donation <200;
 
 Fig. 6
-![](fig.%207.png)
+![fig.6](images/fig.%206.png)
 #
 > **SELECT SUM** (donation), **COUNT** (donation)
 >
@@ -125,7 +126,7 @@ Fig. 6
 > **WHERE** donation = 200;
 
 Fig. 7
-![](fig.%208.png)
+![fig.7](images/fig.%207.png)
 #
 
 #### 5. **Top 10 states that contributes the highest and the least donations**
@@ -142,7 +143,7 @@ The total donations per state were estimated to derive top 10 states that donate
 > **LIMIT** 10;
 
 Fig. 8
-![](fig.%209.png)
+![fig.8](images/fig.%208.png)
 
 
 While the top 10 states that donated the least are Wyoming ($258), South Dakota ($401), North Dakota ($651), Alaska ($734), West Virginia ($793), South Carolina ($819), New Hampshire ($841), Hawaii ($875) and Montana ($1009). as shown below in Fig.10.
@@ -158,7 +159,7 @@ While the top 10 states that donated the least are Wyoming ($258), South Dakota 
 > **LIMIT** 10;
 
 Fig. 9
-![](fig.%2010.png)
+![fig.9](images/fig.%209.png)
 
 
 #### 6. **Top 10 cars driven by the highest donors**
@@ -179,7 +180,7 @@ Donation by donors’ car. Top 10 cars driven by donors that made the highest do
 > **LIMIT** 10;
 
 Fig. 10
-![](fig.%2011.png)
+![fig.10](images/fig.%2010.png)
 
 
 #### 7. **Donors who speak a second language by donation frequency.**
@@ -198,7 +199,7 @@ Fig. 10
 > **ORDER BY COUNT** (donor_data.second_language)  **DESC**;
 
 Fig. 11
-![](fig.%2012.png)
+![fig.11](images/fig.%2011.png)
 
 
 #### 8. **Donors favorite color by donation frequency.**
@@ -218,7 +219,7 @@ Fig. 11
 > **ORDER BY COUNT** (donor_data.favourite_colour) **DESC**;
 
 Fig. 12
-![](fig.%2013.png)
+![fig.12](images/fig.%2012.png)
 
 
 ## FINDINGS
