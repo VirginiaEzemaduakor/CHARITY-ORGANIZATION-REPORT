@@ -129,7 +129,7 @@ SELECT SUM(donation), COUNT(donation)
 
 FROM donation_data
 
-WHERE** donation = 200;
+WHERE donation = 200;
 ```
 
 ![fig.7](images/fig.%207.png)
@@ -139,7 +139,7 @@ WHERE** donation = 200;
 The total donations per state were estimated to derive top 10 states that donated the highest. The estimation includes: California ($30,264), Texas ($24,097), Florida ($20,562), New York ($14,759), Virginia ($10,750), Illinois ($8,674), District of Columbia ($8,376), Tennessee ($8,316), Georgia ($8,046) and Ohio ($6,876).
 
 ```
-SELECT** state, SUM(donation)
+SELECT state, SUM(donation)
 
 FROM donation_data
 
@@ -162,7 +162,7 @@ FROM donation_data
 
 GROUP BY state
 
-ORDER BY SUM** (donation) ASC
+ORDER BY SUM (donation) ASC
 
 LIMIT 10;
 ```
