@@ -12,7 +12,7 @@
 ---
 
 ## Introduction
-This project involves presenting data insight of currently received donations from different donors. Two data sets from a charity organization (Education for All) were provided by the 10Alytic team, namely donation data and donor data, both of which contain different pieces of information related to donors’ biodata and their donations. The analysis is structured to extract the below insights from the dataset that will help with the business problem.
+This project involves presenting data insight of donations received from different donors. Two data sets from a charity organization (Education for All) were provided by the 10Alytic team, namely donation data and donor data, both of which contain different pieces of information related to donors’ biodata and their donations. The analysis is structured to extract the below insights from the dataset that will help with the business problem.
 
 1. Total donation and number of donations by gender
 2. Total donation made by frequency of donation
